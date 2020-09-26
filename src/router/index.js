@@ -34,16 +34,17 @@ export const constantRoutes = [
                 component: () => import(/* webpackChunkName: "index" */'@/components/index/About.vue'),
                 name: '关于我',
             },
+            {
+                path: 'content/:id',
+                component: () => import(/* webpackChunkName: "index" */'@/components/index/Content.vue'),
+                name: '内容',
+                // meta: {
+                //     show: false,
+                // },
+            },
         ],
     },
-    {
-        path: '/content/:id',
-        component: () => import(/* webpackChunkName: "index" */'@/components/index/Content.vue'),
-        name: '内容',
-        meta: {
-            show: false,
-        },
-    },
+
     {
         path: '/login',
         component: () => import(/* webpackChunkName: "common" */'@/components/admin/Login.vue'),

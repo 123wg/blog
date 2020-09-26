@@ -47,7 +47,7 @@ export default {
     },
     computed: {
         routes() {
-            console.log(this.$store.getters.routes);
+            // console.log(this.$store.getters.routes);
             return this.$store.getters.routes.filter((item) => item.meta.show)[0].children;
         },
     },

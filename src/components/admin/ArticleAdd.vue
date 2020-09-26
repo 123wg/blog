@@ -183,7 +183,7 @@ export default {
             const form = new FormData();
             form.append('file', file);
             this.$api.file.upload(form, (res) => {
-                console.log(res.data.path);
+                // console.log(res.data.path);
                 if (res.success) {
                     this.$refs.md.$img2Url(pos, res.data.path);
                 }
@@ -262,7 +262,7 @@ export default {
                 const form = new FormData();
                 form.append('file', file.raw);
                 this.$api.file.upload(form, (res) => {
-                    console.log(res);
+                    // console.log(res);
                     if (res.success) {
                         this.article.coverId = res.data.id;
                         const obj = {
@@ -287,7 +287,7 @@ export default {
         */
         // TODO
         handleRemove() {
-            console.log(this.fileList);
+            // console.log(this.fileList);
             const param = {
                 id: this.fileList[0].id,
             };

@@ -19,6 +19,7 @@ export default {
     components: {
         HeaderImg,
         Article,
+
     },
     data() {
         return {
@@ -33,6 +34,5 @@ export default {
     methods: {},
 };
 </script>
-<style lang='scss' scoped>
-//@import url(); 引入公共css类
+<style lang='scss'>
 </style>

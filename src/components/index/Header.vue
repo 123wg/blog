@@ -100,7 +100,7 @@ export default {
         *@return:
         */
         searchArticle() {
-            console.log('全局搜索');
+            // console.log('全局搜索');
             this.$store.commit('article/setShowSearch', true);
         },
 

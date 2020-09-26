@@ -6,36 +6,36 @@
 
 <template>
     <div class="content">
-        <el-scrollbar style="height: 100%;" wrapStyle="overflow-x: hidden;">
-            <Header></Header>
-            <HeaderImg  :url="article.coverId?article.coverId.path:'https://chefwang.oss-cn-shanghai.aliyuncs.com/images/water-1761027.jpg'"
-                        :title="article.title"
-            ></HeaderImg>
-            <div class="article">
-                <!-- monokai -->
-                <!-- solarized-dark -->
-                <!-- androidstudio -->
-                <mavon-editor
-                    :codeStyle="codeStyle"
-                    v-html="article.htmlContent"
-                    class="mark-self"
-                    :navigation="true"
-                ></mavon-editor>
-            </div>
-            <template>
-                <el-backtop target=".content .el-scrollbar__wrap" title="回到顶部"></el-backtop>
-            </template>
-        </el-scrollbar>
+        <!-- <el-scrollbar style="height: 100%;" wrapStyle="overflow-x: hidden;"> -->
+        <!-- <Header></Header> -->
+        <HeaderImg  :url="article.coverId?article.coverId.path:'https://chefwang.oss-cn-shanghai.aliyuncs.com/images/water-1761027.jpg'"
+                    :title="article.title"
+        ></HeaderImg>
+        <div class="article">
+            <!-- monokai -->
+            <!-- solarized-dark -->
+            <!-- androidstudio -->
+            <mavon-editor
+                :codeStyle="codeStyle"
+                v-html="article.htmlContent"
+                class="mark-self"
+                :navigation="true"
+            ></mavon-editor>
+        </div>
+        <!-- <template>
+            <el-backtop target=".content .el-scrollbar__wrap" title="回到顶部"></el-backtop>
+        </template> -->
+        <!-- </el-scrollbar> -->
     </div>
 </template>
 
 <script>
-import Header from '@/components/index/Header.vue';
+// import Header from '@/components/index/Header.vue';
 import HeaderImg from '@/components/index/HeaderImg.vue';
 
 export default {
     components: {
-        Header,
+        // Header,
         HeaderImg,
     },
     data() {

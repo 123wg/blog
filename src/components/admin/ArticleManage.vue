@@ -102,7 +102,7 @@ export default {
             this.$api.article.list(param, (res) => {
                 if (res.success) {
                     this.articles = res.data.docs;
-                    console.log(res.data);
+                    // console.log(res.data);
                     this.page.total = res.data.total;
                     this.page.pages = res.data.pages;
                     // this.page.

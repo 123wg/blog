@@ -81,7 +81,7 @@ export default {
             if (this.typeId !== '') { param.typeId = this.typeId; }
             this.$api.article.list(param, (res) => {
                 if (res.success) {
-                    console.log(res);
+                    // console.log(res);
                     this.articleList = res.data.docs;
                     this.page.total = res.data.total;
                     this.page.pages = res.data.pages;
