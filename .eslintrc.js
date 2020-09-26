@@ -12,8 +12,10 @@ module.exports = {
   },
   globals: {
     CONFIG: false,
+    _: false
 },
   rules: {
+
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 强制 error

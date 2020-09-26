@@ -24,7 +24,7 @@
 
 <script>
 import Header from '@/components/index/Header.vue';
-import Player from 'zw-player';
+import Player from '@/components/index/zw-player/player.vue';
 
 export default {
     components: {
