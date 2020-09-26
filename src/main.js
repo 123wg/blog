@@ -1,5 +1,7 @@
 import Vue from 'vue';
+// import 'core-js';
 // markdown
+import 'babel-polyfill';
 import mavonEditor from 'mavon-editor';
 import 'mavon-editor/dist/css/index.css';
 // import 'mavon-editor/dist/highlightjs/highlight.min';

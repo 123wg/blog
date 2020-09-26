@@ -8,9 +8,9 @@
 
 const CONFIG = {
     // 服务地址
-    // remote: 'http://localhost:8888',
-    remote: 'http://121.196.197.195:8888',
-    defaultSign:`knowing what's the most important and what's theleast. And then be a simple man`, // 默认个性签名
+    remote: 'http://localhost:8888',
+    // remote: 'http://121.196.197.195:8888',
+    defaultSign:"knowing what's the most important and what's theleast. And then be a simple man", // 默认个性签名
     selfIntroduction:[
         '1.Chef Wang。',
         '2.前端cv工程师,玩过一点点java。',
@@ -36,7 +36,7 @@ const CONFIG = {
     // hybrid
     // ocean
     // qtcreator_dark 111
-    codeStyle:'atelier-cave-dark'
+    codeStyle:'atelier-forest-dark'
 };
 const CONFIG_MAP = {
 

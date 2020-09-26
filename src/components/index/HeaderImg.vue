@@ -34,8 +34,8 @@ export default {
 <style lang='scss' scoped>
 .header-img {
     position: relative;
-    width: 100;
-    height: vh(700);
+    width: 100%;
+    min-height: vh(700);
     .header-title {
         text-indent:2em;
         position: absolute;

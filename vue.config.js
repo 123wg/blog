@@ -35,6 +35,7 @@ module.exports = {
         },
     },
     chainWebpack: (config) => {
+        // config.entry.app = ['babel-polyfill', './src/main.js'];
     // 设置 public 目录别名
         config.resolve.alias.set('#', resolve('public'));
         // 解决 vue-layer 使用时报错问题

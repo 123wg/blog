@@ -82,6 +82,12 @@ export default {
 <style lang="scss">
 @import url('../../plugins/markdown.scss');
 .content {
+    @for $i from 1 through 5 {
+    .markdown-body h#{$i} {
+        border-bottom: none !important;
+    }
+
+}
 .el-backtop{
     background: none;
     border: 1px solid #fff;
@@ -101,7 +107,7 @@ li{
     height: 100%;
     background: #202429;
     .article {
-        padding:0 vw(250);
+        padding: vh(20) vw(250);
         margin-bottom: vh(50);
     }
 }
